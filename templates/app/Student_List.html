@@ -1,0 +1,12 @@
+{% extends 'app/dummy.html' %}
+
+{% block title %}
+<title>Student List page</title>
+{% endblock %}
+
+{% block body_block %}
+    <h1>Welcome to Student List page</h1>
+    {% for i in STO %}
+        <h1><a href="{{i.Stid}}">{{i.Stname}}</a></h1><br><br>
+    {% endfor %}
+{% endblock %}

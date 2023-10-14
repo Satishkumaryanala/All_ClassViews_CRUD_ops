@@ -1,0 +1,15 @@
+{% extends 'app/dummy.html' %}
+
+{% block title %}
+<title>Temp_Form_context page</title>
+{% endblock %}
+
+{% block body_block %}
+    <h1>Temp_Form views</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{SFO.as_p}}
+        <input type="submit" value="Submit" class="btn btn-outline-success">
+    </form>
+    
+{% endblock %}
